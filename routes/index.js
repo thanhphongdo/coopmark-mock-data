@@ -34,6 +34,8 @@ router.post('/mock-data', function(req, res, next){
       }
     }
     start = addOtherIndex;
+  }else{
+    start += limit;
   }
   console.log(data.length);
   res.status(200).json({
