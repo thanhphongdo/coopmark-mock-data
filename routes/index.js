@@ -12,7 +12,7 @@ router.get('/ddd', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/mock-data', function(req, res, next){
+router.get('/mock-data', function(req, res, next){
   var start = parseInt(req.query['start']);
   var limit = parseInt(req.query['limit']);
   var data = [];
